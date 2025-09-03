@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combined Navbar & Container</title>
+  
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("d-block");
+    }
+  </script> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="today pk.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+<body>
+
+  <!-- --1. Navbar -->
+   
+  <div class="container-fluid bg-dark text-white py-2">
+    <div class="d-flex justify-content-between">
+      <div>
+        <i class="fas fa-phone"></i> <span>+91 9876543210</span>
+      </div>
+      <div>
+        <i class="fas fa-envelope"></i> <a href="mailto:example@gmail.com" class="text-white">example@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <nav class="navbar navbar-expand-lg bg-light shadow">
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold text-uppercase" href="#">INANANCE</a>
+      <button class="navbar-toggler border-0" type="button" onclick="toggleMenu()">☰</button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active text-primary" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--2. Container Section -->
+
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="text-primary mb-4 ms-3">Repair and<br> Maintenance <br>Services</h1>
+          <p class="ms-3 mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos
+            molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia
+            consequatur beatae, aspernatur culpa.
+          </p>
+          <button class="btn btn-warning text-white fw-bold text-uppercase ms-3">CONTACT US</button>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="/images/first website image.png" alt="Repair and Maintenance Image" class="img-fluid rounded" style="max-width: 300px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 3.. feature_container -->
+
+<div class="feature_container container">
+    <div class="row g-3">
+      <div class="col-md-4 col-6 main-box">
+        <div class="box">
+          <div class="image">
+            <img src="/images/repair.png" alt="Image 1">
+          </div>
+          <div class="heading">REPAIR</div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 col-6 main-box">
+        <div class="box active">
+          <div class="image">
+            <img src="/images/improve.webp" alt="Image 2">
+          </div>
+          <div class="heading">IMPROVE</div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 col-6 main-box">
+        <div class="box">
+          <div class="image">
+            <img src="/images/maintain.webp" alt="Image 3">
+          </div>
+          <div class="heading">MAINTAIN</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--4.. About Us Section -->
+
+
+<section class="about-us py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-section">
+                <h2 class="about-title">ABOUT US</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised</p>
+                <a href="#" class="btn btn-primary about-btn">READ MORE</a>
+            </div>
+            <div class="col-md-6">
+                <img src="/images/about-img.jpg" alt="About Us" class="img-fluid rounded about-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--5.. Home Services Section -->
+
+
+<section class="home-services py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-lg-start">
+                <img src="/images/professional-img.png" alt="Worker" class="img-fluid worker-image">
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <h2>We Provide Professional Home Services.</h2>
+                    <p>randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All randomised words which don't look even slightly</p>
+                    <a href="#" class="btn btn-warning">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 6.SIX CONTAINE -->
+
+
+<section class="services py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">OUR SERVICES</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-md-4">
+                <div class="service-box p-4">
+                    <i class="fas fa-tools"></i>
+                    <h4 class="mt-3">Maintenance</h4>
+                    <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box p-4">
+                    <i class="fas fa-plug"></i>
+                    <h4 class="mt-3">Electrical</h4>
+                    <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box p-4">
+                    <i class="fas fa-bath"></i>
+                    <h4 class="mt-3">Plumbing</h4>
+                    <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary mt-4">VIEW MORE</button>
+    </div>
+</section>
+
+
+
+
+    <!-- 7. container-->
+
+
+    <div class="container text-center mt-4">
+        <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+    </div>
+
+    
+    <div class="container carousel-wrap">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="owl-carousel owl-theme">
+                    <!-- Slide 1 -->
+                    <div class="item">
+                        <div class="item-box d-flex align-items-center p-3">
+                            <div class="image-box">
+                                <img src="/images/client-1.jpg" alt="Client Image">
+                            </div>
+                            <div class="content-box">
+                                <h3>JORCH MORIK</h3>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="item">
+                        <div class="item-box d-flex align-items-center p-3">
+                            <div class="image-box">
+                                <img src="/images/client-2.jpg" alt="Client Image">
+                            </div>
+                            <div class="content-box">
+                                <h3>JORCH MORIK</h3>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+                <div class="carousel-buttons">
+                    <button class="owl-prev">←</button>
+                    <button class="owl-next">→</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+        $(document).ready(function(){
+            var owl = $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                items: 2,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: true
+            });
+
+            $(".owl-prev").click(function() {
+                owl.trigger('prev.owl.carousel');
+            });
+
+            $(".owl-next").click(function() {
+                owl.trigger('next.owl.carousel');
+            });
+        });
+    </script>
+
+
+
+
+    <!--8. contact section -->
+
+
+    
+<section class="contact-section my-5">
+  <div class="container">
+    <h2 class="text-center mb-4">CONTACT US</h2>
+    <div class="row justify-content-center">
+    
+
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Phone Number" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">SEND</button>
+        </form>
+      </div>
+
+      
+      <div class="col-md-6">
+        <iframe 
+          src="https://maps.google.com/maps?q=your%20location&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          width="100%" 
+          height="370" 
+          style="border:0; border-radius: 8px;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--9. Footer Section -->
+<footer>
+  <section class="get-in-touch">
+      <div class="container8">
+          <h5 class="text-center text-white mb-4">GET IN TOUCH</h5>
+          <div class="row align-items-center text-center get-in-touch-cards">
+              <div class="col-md-4">
+                  <div class="icon-box">
+                      <div class="icon"><i class="fa-solid fa-map-marker-alt"></i></div>
+                      <p>Lorem Ipsum is simply dummy text</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="icon-box">
+                      <div class="icon"><i class="fa-solid fa-phone-alt"></i></div>
+                      <p>+02 1234567890</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="icon-box">
+                      <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                      <p>mail@domain.com</p>
+                  </div>
+              </div>
+          </div>
+          <!-- <hr class="custom-line"> -->
+          <div class="text-center mt-3">
+              <h5 class="text-white">FOLLOW US</h5>
+             
+               <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            
+          </div>
+          <hr class="custom-line">
+          <p class="text-center text-white mt-3">&copy; 2025 All Rights Reserved. By HTML Design</p>
+      </div>
+  </section>
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+          
+<script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
