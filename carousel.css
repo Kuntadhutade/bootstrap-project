@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.carousel-caption{
+    bottom: 50%;
+    transform: translate(0,50%);
+}
+
+.carousel-caption h5{
+  font-size: 1rem;
+  font-weight: 700;
+ color: white;
+}
